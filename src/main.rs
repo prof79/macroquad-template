@@ -18,19 +18,19 @@ async fn main() {
 
     let mut elapsed_time_seconds= 5.0;
 
+    let rect = CustomRectangle::new(
+        250.0,
+        400.0,
+        300.0,
+        150.0,
+        1.0,
+        WHITE,
+    );
+
     loop {
         clear_background(BLUE);
 
         draw_rectangle(300.0, 250.0, 220.0, 100.0, GREEN);
-
-        let rect = CustomRectangle::new(
-            300.0,
-            400.0,
-            300.0,
-            150.0,
-            1.0,
-            WHITE,
-        );
 
         rect.draw();
 
